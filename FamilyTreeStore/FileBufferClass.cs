@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-namespace FamilyTreeLibrary.FileFormats
+namespace FamilyTreeLibrary.FamilyTreeStore
 {
   public class FileBufferClass
   {
