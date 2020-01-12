@@ -12,8 +12,6 @@
 ### Dependencies
 - Dotnet Core 3.0
 
-
-
-### License 
-- Apache 2.0
+### Copyright
 - Copyright 2020 Kenneth Ekman
+- License Apache 2.0
