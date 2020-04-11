@@ -88,6 +88,11 @@ namespace FamilyTreeLibrary.FamilyTreeStore
       nextXrefId = 1;
     }
 
+    public FamilyTreeCapabilityClass GetCapabilities()
+    {
+      return new FamilyTreeCapabilityClass { jsonSearch = false };
+    }
+
     public void Dispose()
     {
       trace.TraceData(TraceEventType.Information, 0, "FamilyTreeStoreRam.Dispose()");

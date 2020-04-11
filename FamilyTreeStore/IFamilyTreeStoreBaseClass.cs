@@ -50,7 +50,13 @@ namespace FamilyTreeLibrary.FamilyTreeStore
     }
   }
 
-  public class ValidationData
+  public class FamilyTreeCapabilityClass
+  {
+    public bool jsonSearch;
+  }
+
+
+    public class ValidationData
   {
     public int familyNo;
     public int submitterNo;
@@ -152,6 +158,8 @@ namespace FamilyTreeLibrary.FamilyTreeStore
     //void PrintShort();
 
     String GetShortTreeInfo();
+
+    FamilyTreeCapabilityClass GetCapabilities();
 
     FamilyTreeContentClass GetContents();
 
