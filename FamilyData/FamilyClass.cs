@@ -316,7 +316,7 @@ namespace FamilyTreeLibrary.FamilyData
         case FamilyDateType.Year:
           if (year <= 100)
           {
-            trace.TraceData(TraceEventType.Warning, 0, "Warning bad year!" + year + " " + ToString());
+            //trace.TraceData(TraceEventType.Warning, 0, "Warning bad year!" + year + " " + ToString());
             //type = FamilyDateType.Unknown;
             badYear = true;
             return true;
