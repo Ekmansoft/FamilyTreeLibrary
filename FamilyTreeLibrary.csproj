@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -9,6 +9,8 @@
     <Copyright>Kenneth Ekman</Copyright>
     <Authors>Kenneth Ekman</Authors>
     <Company>Kenneth Ekman</Company>
+    <PackageTags>Genealogy</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
