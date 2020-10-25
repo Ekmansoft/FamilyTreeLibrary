@@ -4,6 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RepositoryUrl>https://github.com/endian02/FamilyTreeLibrary.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
+    <Copyright>Kenneth Ekman</Copyright>
+    <Authors>Kenneth Ekman</Authors>
+    <Company>Kenneth Ekman</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE-2.0.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
