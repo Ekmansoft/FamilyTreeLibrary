@@ -13,6 +13,7 @@
     <PackageTags>Genealogy</PackageTags>
     <PackageProjectUrl>https://github.com/users/endian02/projects/1</PackageProjectUrl>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageId>endian.FamilyTree.Library</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
