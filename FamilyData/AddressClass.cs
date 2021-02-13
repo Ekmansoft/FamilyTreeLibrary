@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using FamilyTreeLibrary.FamilyData;
 using System.Runtime.Serialization;
 
 namespace FamilyTreeLibrary.FamilyData

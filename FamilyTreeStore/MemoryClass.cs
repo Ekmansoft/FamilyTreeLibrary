@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace FamilyTreeLibrary.FamilyTreeStore
 {
@@ -71,16 +67,16 @@ namespace FamilyTreeLibrary.FamilyTreeStore
       trace.TraceInformation("Process mem: NPSMS:" + process.NonpagedSystemMemorySize64 + " PMS:" + process.PagedMemorySize64 + " PSMS:" + process.PagedSystemMemorySize64 + " PPMS:" + process.PeakPagedMemorySize64 + " PVMS:" + process.PeakVirtualMemorySize64 + " PWS:" + process.PeakWorkingSet64 + " PMS:" + process.PrivateMemorySize64 + " VMS:" + process.VirtualMemorySize64 + " WS:" + process.WorkingSet64);
     }
 
-/*    public void PrintProcess(Process process)
-    {
+    /*    public void PrintProcess(Process process)
+        {
 
-        //trace.TraceInformation("Process mem-delta: " + (process.NonpagedSystemMemorySize64 - processMem.NonpagedSystemMemorySize64) + "," + (process.PagedMemorySize64 - processMem.PagedMemorySize64) + "," + (process.PagedSystemMemorySize64 - processMem.PagedSystemMemorySize64) + "," + (process.PeakPagedMemorySize64 - processMem.PeakPagedMemorySize64) + "," + (process.PeakVirtualMemorySize64 - processMem.PeakVirtualMemorySize64) + "," + (process.PeakWorkingSet64 - processMem.PeakWorkingSet64) + "," + (process.PrivateMemorySize64 - processMem.PrivateMemorySize64) + "," + (process.VirtualMemorySize64 - processMem.VirtualMemorySize64) + "," + (process.WorkingSet64 - processMem.WorkingSet64));
-        //trace.TraceInformation("Process mem-delta: " + (process.NonpagedSystemMemorySize64 - processMem.NonpagedSystemMemorySize64) + "," + (process.PagedMemorySize64 - processMem.PagedMemorySize64) + "," + (process.PagedSystemMemorySize64 - processMem.PagedSystemMemorySize64) + "," + (process.PeakPagedMemorySize64 - processMem.PeakPagedMemorySize64) + "," + (process.PeakVirtualMemorySize64 - processMem.PeakVirtualMemorySize64) + "," + (process.PeakWorkingSet64 - processMem.PeakWorkingSet64) + "," + (process.PrivateMemorySize64 - processMem.PrivateMemorySize64) + "," + (process.VirtualMemorySize64 - processMem.VirtualMemorySize64) + "," + (process.WorkingSet64 - processMem.WorkingSet64));
-        PrintProcessDelta(process, processMem);
-      }
+            //trace.TraceInformation("Process mem-delta: " + (process.NonpagedSystemMemorySize64 - processMem.NonpagedSystemMemorySize64) + "," + (process.PagedMemorySize64 - processMem.PagedMemorySize64) + "," + (process.PagedSystemMemorySize64 - processMem.PagedSystemMemorySize64) + "," + (process.PeakPagedMemorySize64 - processMem.PeakPagedMemorySize64) + "," + (process.PeakVirtualMemorySize64 - processMem.PeakVirtualMemorySize64) + "," + (process.PeakWorkingSet64 - processMem.PeakWorkingSet64) + "," + (process.PrivateMemorySize64 - processMem.PrivateMemorySize64) + "," + (process.VirtualMemorySize64 - processMem.VirtualMemorySize64) + "," + (process.WorkingSet64 - processMem.WorkingSet64));
+            //trace.TraceInformation("Process mem-delta: " + (process.NonpagedSystemMemorySize64 - processMem.NonpagedSystemMemorySize64) + "," + (process.PagedMemorySize64 - processMem.PagedMemorySize64) + "," + (process.PagedSystemMemorySize64 - processMem.PagedSystemMemorySize64) + "," + (process.PeakPagedMemorySize64 - processMem.PeakPagedMemorySize64) + "," + (process.PeakVirtualMemorySize64 - processMem.PeakVirtualMemorySize64) + "," + (process.PeakWorkingSet64 - processMem.PeakWorkingSet64) + "," + (process.PrivateMemorySize64 - processMem.PrivateMemorySize64) + "," + (process.VirtualMemorySize64 - processMem.VirtualMemorySize64) + "," + (process.WorkingSet64 - processMem.WorkingSet64));
+            PrintProcessDelta(process, processMem);
+          }
 
-      processMem = process;
-    }*/
+          processMem = process;
+        }*/
     public void PrintMemory()
     {
       Process process2 = Process.GetCurrentProcess();

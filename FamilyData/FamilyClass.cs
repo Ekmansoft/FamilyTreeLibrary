@@ -1,10 +1,8 @@
-﻿using System;
+﻿using FamilyTreeLibrary.FamilyTreeStore;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using FamilyTreeLibrary.FamilyTreeStore;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -154,7 +152,7 @@ namespace FamilyTreeLibrary.FamilyData
     }
     private string GetMonthStr(int month)
     {
-      switch(month)
+      switch (month)
       {
         case 1:
           return "JAN";
@@ -353,7 +351,7 @@ namespace FamilyTreeLibrary.FamilyData
       }
       catch (ArgumentOutOfRangeException e)
       {
-        trace.TraceInformation("Date type" + type + " " + year + "-" + month + "-" + day );
+        trace.TraceInformation("Date type" + type + " " + year + "-" + month + "-" + day);
         trace.TraceInformation(e.ToString());
         return new DateTime();
       }
@@ -362,7 +360,7 @@ namespace FamilyTreeLibrary.FamilyData
 
     public void SetTime(int inHour, int inMinute, int inSecond)
     {
-      if((inHour >= 0) && (inHour <= 24))
+      if ((inHour >= 0) && (inHour <= 24))
       {
         hour = inHour;
         if ((inMinute >= 0) && (inMinute <= 59))
@@ -383,7 +381,7 @@ namespace FamilyTreeLibrary.FamilyData
           timeType = FamilyTimeType.Hour;
         }
       }
-      
+
     }
 
 
@@ -690,9 +688,9 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation("\n s:0");
       }
-      if(familyEventList != null)
+      if (familyEventList != null)
       {
-        foreach(IndividualEventClass ev in familyEventList)
+        foreach (IndividualEventClass ev in familyEventList)
         {
           trace.TraceInformation("\n ev:" + ev.GetEventType() + " " + ev.GetDate());
         }
@@ -731,7 +729,7 @@ namespace FamilyTreeLibrary.FamilyData
     }
     public IList<IndividualXrefClass> GetChildList()
     {
-      if(childList == null)
+      if (childList == null)
       {
         return new List<IndividualXrefClass>();
       }

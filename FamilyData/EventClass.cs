@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using FamilyTreeLibrary.FamilyData;
-using FamilyTreeLibrary.FamilyTreeStore;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -141,7 +137,7 @@ namespace FamilyTreeLibrary.FamilyData
       if (inDate != null)
       {
         date = inDate;
-        if(date.badYear)
+        if (date.badYear)
         {
           badDate = true;
         }
@@ -157,15 +153,15 @@ namespace FamilyTreeLibrary.FamilyData
       //sourceList = new List<SourceDescriptionClass>();
 
     }
-/*    public IndividualEventClass(EventType inEventType = EventType.Unknown)
-    {
-      eventType = inEventType;
-      date = new FamilyDateTimeClass();
-      //address = new AddressClass();
-      //noteList = new List<NoteClass>();
-      //noteXrefList = new List<NoteXrefClass>();
-      //sourceList = new List<SourceClass>();
-    }*/
+    /*    public IndividualEventClass(EventType inEventType = EventType.Unknown)
+        {
+          eventType = inEventType;
+          date = new FamilyDateTimeClass();
+          //address = new AddressClass();
+          //noteList = new List<NoteClass>();
+          //noteXrefList = new List<NoteXrefClass>();
+          //sourceList = new List<SourceClass>();
+        }*/
 
     public void AddAddressPart(AddressPartClass inAddress)
     {
@@ -260,7 +256,7 @@ namespace FamilyTreeLibrary.FamilyData
 
     public void SetDate(FamilyDateTimeClass inDate)
     {
-      if((date != null) && date.ValidDate())
+      if ((date != null) && date.ValidDate())
       {
         trace.TraceData(TraceEventType.Warning, 0, "Adding date, where date already exists:" + date.ToString() + " " + inDate.ToString());
       }
@@ -327,14 +323,14 @@ namespace FamilyTreeLibrary.FamilyData
     public string ToString(bool showType = true)
     {
       string tString = "";
-      
-      if(showType)
+
+      if (showType)
       {
         tString += eventType.ToString() + ":";
       }
       tString += date;
 
-      if(address != null)
+      if (address != null)
       {
         tString += address.ToString();
       }

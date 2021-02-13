@@ -1,9 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Text;
-
-namespace FamilyTreeLibrary.FamilyTreeStore
+﻿namespace FamilyTreeLibrary.FamilyTreeStore
 {
   public class ProgressReporterClass
   {

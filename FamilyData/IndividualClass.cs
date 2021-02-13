@@ -1,11 +1,8 @@
-﻿using System;
+﻿using FamilyTreeLibrary.FamilyTreeStore;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using FamilyTreeLibrary.FamilyData;
-using FamilyTreeLibrary.FamilyTreeStore;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -52,7 +49,7 @@ namespace FamilyTreeLibrary.FamilyData
       //sourceXrefList = new List<SourceXrefClass>();
       //noteList = new List<NoteClass>();
       //noteXrefList = new List<NoteXrefClass>();
-      if(name != null)
+      if (name != null)
       {
         partialNameList.Add(type, name);
       }
@@ -91,7 +88,7 @@ namespace FamilyTreeLibrary.FamilyData
         if (partialNameList.ContainsKey(PartialNameType.BirthSurname))
         {
           bool include = true;
-          if(partialNameList.ContainsKey(PartialNameType.Surname))
+          if (partialNameList.ContainsKey(PartialNameType.Surname))
           {
             if (partialNameList[PartialNameType.BirthSurname] == partialNameList[PartialNameType.Surname])
             {
@@ -113,9 +110,9 @@ namespace FamilyTreeLibrary.FamilyData
     {
       if (partialNameList.Count > 0)
       {
-        if(partialNameList.ContainsKey(type))
+        if (partialNameList.ContainsKey(type))
         {
-          
+
           {
             trace.TraceInformation("GetName(" + type + "):" + partialNameList[type]);
           }
@@ -142,12 +139,12 @@ namespace FamilyTreeLibrary.FamilyData
     }
 
     public void SetName(PartialNameType type, String name)
-    {      
+    {
       trace.TraceInformation("SetName(" + type + "," + name + ")");
 
       if (partialNameList.ContainsKey(type))
       {
-        if(partialNameList[type].IndexOf(name) != 0)
+        if (partialNameList[type].IndexOf(name) != 0)
         {
           return;
         }
@@ -215,7 +212,7 @@ namespace FamilyTreeLibrary.FamilyData
 
     public void SanityCheck()
     {
-        
+
     }
 
     public override string ToString()
@@ -355,7 +352,7 @@ namespace FamilyTreeLibrary.FamilyData
 
     public IList<IndividualEventClass> GetEventList(IndividualEventClass.EventType requestedEventTypes = IndividualEventClass.EventType.AllEvents)
     {
-      if(eventList == null)
+      if (eventList == null)
       {
         return new List<IndividualEventClass>();
       }
@@ -650,7 +647,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         this.isAlive = Alive.Yes;
       }
-      else 
+      else
       {
         this.isAlive = Alive.No;
       }
@@ -690,7 +687,7 @@ namespace FamilyTreeLibrary.FamilyData
           if (!found)
           {
             //
-            if(trace.Switch.Level.HasFlag(SourceLevels.Information))
+            if (trace.Switch.Level.HasFlag(SourceLevels.Information))
             {
               Print();
               trace.TraceInformation(" Family-child not found: " + xrefName);
@@ -850,7 +847,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" familySpouseList:-");
       }
-      if ((submitterList != null) && (submitterList .Count > 0))
+      if ((submitterList != null) && (submitterList.Count > 0))
       {
         trace.TraceInformation(" submitterList:" + submitterList.Count);
         foreach (SubmitterXrefClass xref in submitterList)
@@ -862,7 +859,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" submitterList:-");
       }
-      if ((permanentRFN_List != null) && permanentRFN_List .Count > 0)
+      if ((permanentRFN_List != null) && permanentRFN_List.Count > 0)
       {
         trace.TraceInformation(" permanentRFN_List:" + permanentRFN_List.Count);
       }
@@ -870,7 +867,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" permanentRFN_List:-");
       }
-      if ((noteList != null) && (noteList .Count > 0))
+      if ((noteList != null) && (noteList.Count > 0))
       {
         trace.TraceInformation(" noteList:" + noteList.Count);
       }
@@ -878,7 +875,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" noteList:-");
       }
-      if ((noteXrefList != null) && (noteXrefList .Count > 0))
+      if ((noteXrefList != null) && (noteXrefList.Count > 0))
       {
         trace.TraceInformation(" noteXrefList:" + noteXrefList.Count);
       }
@@ -902,7 +899,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" multimediaLinkList:-");
       }
-      if ((sourceList != null) && (sourceList .Count > 0))
+      if ((sourceList != null) && (sourceList.Count > 0))
       {
         trace.TraceInformation(" sourceList:" + sourceList.Count);
       }
@@ -918,7 +915,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation(" specialRecordList:(none)");
       }
-    
+
       trace.TraceInformation("Individual:" + xrefName + "-end");
     }
 

@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -240,8 +237,8 @@ namespace FamilyTreeLibrary.FamilyData
       changeNote = inChangeNote;
     }
 
-    
-    
+
+
     public void Print()
     {
       //trace.TraceInformation("Source: " + name);
@@ -292,7 +289,7 @@ namespace FamilyTreeLibrary.FamilyData
       //trace.TraceInformation("SetXrefName:" + name);
       text = inText;
     }
-   public void AddNote(NoteClass inNote)
+    public void AddNote(NoteClass inNote)
     {
       //trace.TraceInformation("SetXrefName:" + name);
       if (noteList == null)

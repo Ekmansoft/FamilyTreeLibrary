@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.ComponentModel;
-using FamilyTreeLibrary.FamilyData;
+using System.IO;
+using System.Text;
 //using FamilyTreeLibrary.FamilyTreeStore;
 
 namespace FamilyTreeLibrary.FamilyTreeStore

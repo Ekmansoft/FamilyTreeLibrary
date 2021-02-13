@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using FamilyTreeLibrary.FamilyData;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -50,7 +47,7 @@ namespace FamilyTreeLibrary.FamilyData
       //sourceList = new List<SourceDescriptionClass>();
       noteXrefList = new List<NoteXrefClass>();
       sourceXrefList = new List<SourceXrefClass>();
-      if(place != null)
+      if (place != null)
       {
         placeValue = place;
       }

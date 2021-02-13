@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -67,13 +65,13 @@ namespace FamilyTreeLibrary.FamilyData
 
     public String GetXrefName()
     {
-        //trace.TraceInformation("SetXrefName:" + name);
-        return xrefName;
+      //trace.TraceInformation("SetXrefName:" + name);
+      return xrefName;
     }
 
     public void Print()
     {
-      trace.TraceInformation("MultimediaObjectClass:" + xrefName);      
+      trace.TraceInformation("MultimediaObjectClass:" + xrefName);
     }
   }
 
@@ -150,7 +148,7 @@ namespace FamilyTreeLibrary.FamilyData
       {
         trace.TraceInformation("  noteXrefList:" + noteXrefList.Count);
       }
-     
+
     }
     public void AddNote(NoteClass note)
     {

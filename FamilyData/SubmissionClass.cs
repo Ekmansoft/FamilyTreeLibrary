@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FamilyTreeLibrary.FamilyData
 {
@@ -107,10 +104,10 @@ namespace FamilyTreeLibrary.FamilyData
     {
       return automatedRecordId;
     }
-    
-}
 
-//  [DataContract]
+  }
+
+  //  [DataContract]
   public class SubmissionXrefClass : BaseXrefClass
   {
     public SubmissionXrefClass(String name) : base(XrefType.Submission, name)

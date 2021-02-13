@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
-using System.Text;
-//using System.ComponentModel;
+﻿//using System.ComponentModel;
 using FamilyTreeLibrary.FamilyData;
+using System;
+using System.Collections.Generic;
+using System.Text;
 //using FamilyTreeLibrary.FamilyFileFormat;
 
 namespace FamilyTreeLibrary.FamilyTreeStore
@@ -23,7 +21,7 @@ namespace FamilyTreeLibrary.FamilyTreeStore
 
     private void AppendStrIfNotZero(ref StringBuilder builder, int value, string str)
     {
-      if(value != 0)
+      if (value != 0)
       {
         if (builder.Length > 0)
         {
@@ -56,7 +54,7 @@ namespace FamilyTreeLibrary.FamilyTreeStore
   }
 
 
-    public class ValidationData
+  public class ValidationData
   {
     public int familyNo;
     public int submitterNo;
@@ -79,11 +77,11 @@ namespace FamilyTreeLibrary.FamilyTreeStore
 
   public enum PersonDetail
   {
-    Name     = 0x0001,
-    Events   = 0x0002,
-    Sex      = 0x0004,
+    Name = 0x0001,
+    Events = 0x0002,
+    Sex = 0x0004,
     Children = 0x0008,
-    Parents  = 0x0010,
+    Parents = 0x0010,
 
     All = 0xFFFF
   }
@@ -91,10 +89,10 @@ namespace FamilyTreeLibrary.FamilyTreeStore
   [Flags]
   public enum PersonUpdateType
   {
-    Name         = 0x0001,
-    Events       = 0x0002,
+    Name = 0x0001,
+    Events = 0x0002,
     SpouseFamily = 0x0004,
-    ChildFamily  = 0x0008,
+    ChildFamily = 0x0008,
   }
   public interface IFamilyTreeStoreBaseClass
   {

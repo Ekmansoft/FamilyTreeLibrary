@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using FamilyTreeLibrary.FamilyData;
+using System;
 using System.Runtime.Serialization;
-using FamilyTreeLibrary.FamilyData;
+using System.Text.Json;
 
 namespace FamilyTreeLibrary.FamilyTreeStore
 {

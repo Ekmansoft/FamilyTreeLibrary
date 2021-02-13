@@ -1,12 +1,8 @@
-﻿using System;
+﻿using FamilyTreeLibrary.FamilyData;
+using System;
 using System.Collections.Generic;
-using System.Collections;
 using System.Diagnostics;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.ComponentModel;
-using FamilyTreeLibrary.FamilyData;
 //using FamilyTreeLibrary.FamilyFileFormat;
 
 namespace FamilyTreeLibrary.FamilyTreeStore
@@ -28,21 +24,21 @@ namespace FamilyTreeLibrary.FamilyTreeStore
     private static readonly TraceSource trace = new TraceSource("FamilyTreeStoreRam", SourceLevels.Warning);
     // Add trace as datamember to avoid null-problems after reading tree from native file.
     [DataMember]
-    private IDictionary<string,FamilyClass> familyList;
+    private IDictionary<string, FamilyClass> familyList;
     [DataMember]
-    private IDictionary<string,IndividualClass> individualList;
+    private IDictionary<string, IndividualClass> individualList;
     [DataMember]
-    private IDictionary<string,NoteClass> noteList;
+    private IDictionary<string, NoteClass> noteList;
     [DataMember]
-    private IDictionary<string,SourceClass> sourceList;
+    private IDictionary<string, SourceClass> sourceList;
     [DataMember]
-    private IDictionary<string,RepositoryClass> repositoryList;
+    private IDictionary<string, RepositoryClass> repositoryList;
     [DataMember]
-    private IDictionary<string,SubmissionClass> submissionList;
+    private IDictionary<string, SubmissionClass> submissionList;
     [DataMember]
-    private IDictionary<string,MultimediaObjectClass> multimediaObjectList;
+    private IDictionary<string, MultimediaObjectClass> multimediaObjectList;
     [DataMember]
-    private IDictionary<string,SubmitterClass> submitterList;
+    private IDictionary<string, SubmitterClass> submitterList;
 
     [DataMember]
     private int nextXrefId;
@@ -183,7 +179,7 @@ namespace FamilyTreeLibrary.FamilyTreeStore
         return null;
       }
 
-      if(!individualList.ContainsKey(xrefName))
+      if (!individualList.ContainsKey(xrefName))
       {
         trace.TraceData(TraceEventType.Error, 0, "GetIndividual() key not found:" + xrefName);
         return null;
