@@ -14,6 +14,7 @@
     <PackageProjectUrl>https://github.com/users/Ekmansoft/projects/1</PackageProjectUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageId>Ekmansoft.FamilyTree.Library</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
