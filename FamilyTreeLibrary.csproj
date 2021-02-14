@@ -3,17 +3,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RepositoryUrl>https://github.com/endian02/FamilyTreeLibrary.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Ekmansoft/FamilyTreeLibrary.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
-    <Copyright>Kenneth Ekman</Copyright>
+    <Copyright>Kenneth Ekman, Ekmansoft</Copyright>
     <Authors>Kenneth Ekman</Authors>
-    <Company>Kenneth Ekman</Company>
+    <Company>Ekmansoft</Company>
     <PackageTags>Genealogy</PackageTags>
-    <PackageProjectUrl>https://github.com/users/endian02/projects/1</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/users/Ekmansoft/projects/1</PackageProjectUrl>
     <NeutralLanguage>en</NeutralLanguage>
-    <PackageId>endian.FamilyTree.Library</PackageId>
+    <PackageId>Ekmansoft.FamilyTree.Library</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
