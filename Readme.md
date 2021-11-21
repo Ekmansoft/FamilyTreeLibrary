@@ -10,7 +10,7 @@
 - Also intended to be used for family trees on the internet like http://Geni.com. 
 
 ### Dependencies
-- Dotnet Core 3.1
+- Dotnet Core 6.0
 
 ### Copyright
 - Copyright 2020 Kenneth Ekman
