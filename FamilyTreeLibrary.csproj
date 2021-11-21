@@ -14,6 +14,10 @@
     <PackageProjectUrl>https://github.com/users/Ekmansoft/projects/1</PackageProjectUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageId>Ekmansoft.FamilyTree.Library</PackageId>
+    <AssemblyName>Ekmansoft.FamilyTree.Library</AssemblyName>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedTrackedSource>true</EmbedTrackedSource>
     <Version>1.2.0</Version>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
