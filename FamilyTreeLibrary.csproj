@@ -5,6 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RepositoryUrl>https://github.com/Ekmansoft/FamilyTreeLibrary.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE-2.0.txt</PackageLicenseFile>
     <Copyright>Kenneth Ekman, Ekmansoft</Copyright>
@@ -17,7 +18,7 @@
     <AssemblyName>Ekmansoft.FamilyTree.Library</AssemblyName>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <IncludeSymbols>true</IncludeSymbols>
-    <EmbedTrackedSource>true</EmbedTrackedSource>
+    <EmbedAllSources>true</EmbedAllSources>
     <Version>1.2.0</Version>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
