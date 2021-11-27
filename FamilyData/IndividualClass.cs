@@ -277,6 +277,7 @@ namespace FamilyTreeLibrary.FamilyData
       //sourceList = new List<SourceClass>();
       isAlive = Alive.Unknown;
       @public = true;
+      xrefName = "";
       MarkUpdate();
     }
 
