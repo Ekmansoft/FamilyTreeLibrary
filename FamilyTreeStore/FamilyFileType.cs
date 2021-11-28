@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
-//using FamilyTreeLibrary.FamilyTreeStore;
+//using Ekmansoft.FamilyTree.Library.FamilyTreeStore;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public enum FamilyFileTypeOperation
   {

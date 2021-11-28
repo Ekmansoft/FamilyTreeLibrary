@@ -1,11 +1,11 @@
 ﻿//using System.ComponentModel;
-using FamilyTreeLibrary.FamilyData;
+using Ekmansoft.FamilyTree.Library.FamilyData;
 using System;
 using System.Collections.Generic;
 using System.Text;
 //using FamilyTreeLibrary.FamilyFileFormat;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public class FamilyTreeContentClass
   {

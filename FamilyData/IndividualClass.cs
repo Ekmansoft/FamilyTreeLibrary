@@ -1,10 +1,10 @@
-﻿using FamilyTreeLibrary.FamilyTreeStore;
+﻿using Ekmansoft.FamilyTree.Library.FamilyTreeStore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
-namespace FamilyTreeLibrary.FamilyData
+namespace Ekmansoft.FamilyTree.Library.FamilyData
 {
   [DataContract]
   public class PersonalNameClass : ICloneable

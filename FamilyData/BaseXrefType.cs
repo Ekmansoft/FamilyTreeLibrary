@@ -6,7 +6,7 @@ using System.Diagnostics;
 //using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
-namespace FamilyTreeLibrary.FamilyData
+namespace Ekmansoft.FamilyTree.Library.FamilyData
 {
   [DataContract]
   public enum XrefType

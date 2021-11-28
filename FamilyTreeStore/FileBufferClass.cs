@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public class FileBufferClass
   {

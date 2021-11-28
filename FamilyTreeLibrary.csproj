@@ -19,7 +19,8 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <IncludeSymbols>true</IncludeSymbols>
     <EmbedAllSources>true</EmbedAllSources>
-    <Version>1.2.1</Version>
+    <RootNamespace>Ekmansoft.FamilyTree</RootNamespace>
+    <Version>1.3.0</Version>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
 

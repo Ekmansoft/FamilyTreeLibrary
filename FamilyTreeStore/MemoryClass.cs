@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public class MemoryClass
   {

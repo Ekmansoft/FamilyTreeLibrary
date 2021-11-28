@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public delegate void WorkProgressHandler(int JobId, int progressPercent, string text = null);
   public delegate bool CheckIfStopRequested(int JobId);

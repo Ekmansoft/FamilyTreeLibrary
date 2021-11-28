@@ -1,9 +1,9 @@
-﻿using FamilyTreeLibrary.FamilyData;
+﻿using Ekmansoft.FamilyTree.Library.FamilyData;
 using System;
 using System.Runtime.Serialization;
 using System.Text.Json;
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public class SearchDescriptor
   {

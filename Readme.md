@@ -1,4 +1,4 @@
-### FamilyTreeLibrary
+### Ekmansoft.FamilyTree.Library
 - Dotnet Core C# library for managing genealogy family trees
 
 ### Description

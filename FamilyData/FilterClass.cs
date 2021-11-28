@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace FamilyTreeLibrary.FamilyData
+namespace Ekmansoft.FamilyTree.Library.FamilyData
 {
   [DataContract]
   public class FlagOpticsClass

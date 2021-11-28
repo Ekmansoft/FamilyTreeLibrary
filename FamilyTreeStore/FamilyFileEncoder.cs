@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-//using FamilyTreeLibrary.FamilyData;
-//using FamilyTreeLibrary.FamilyTreeStore;
+//using Ekmansoft.FamilyTree.Library.FamilyData;
+//using Ekmansoft.FamilyTree.Library.FamilyTreeStore;
 
 
-namespace FamilyTreeLibrary.FamilyTreeStore
+namespace Ekmansoft.FamilyTree.Library.FamilyTreeStore
 {
   public interface FamilyFileEncoder
   {
