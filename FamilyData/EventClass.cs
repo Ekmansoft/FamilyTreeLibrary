@@ -289,21 +289,33 @@ namespace Ekmansoft.FamilyTree.Library.FamilyData
     {
       eventType = inType;
     }
-    public void SetEventType(String inType)
-    {
-      eventTypeString = inType;
-    }
     public EventType GetEventType()
     {
       return eventType;
+    }
+    public void SetEventTypeString(string inType)
+    {
+      eventTypeString = inType;
+    }
+    public string GetEventTypeString()
+    {
+      return eventTypeString;
     }
     public void SetFamilyXref(FamilyXrefClass inFamilyXref)
     {
       familyXref = inFamilyXref;
     }
+    public FamilyXrefClass GetFamilyXref()
+    {
+      return familyXref;
+    }
     public void SetCause(String inCause)
     {
       cause = inCause;
+    }
+    public string GetCause()
+    {
+      return cause;
     }
 
     public void AddParentAge(ParentType type, string age)
